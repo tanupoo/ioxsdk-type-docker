@@ -1,0 +1,24 @@
+descriptor-schema-version: "2.2"
+
+info:
+  name: SparkBotNotifier
+  description: "Spark Bot Notifier"
+  version: "1.0"
+  author-link: ""
+  author-name: "Shoichi Sakane"
+
+app:
+  # Indicate app type (vm, paas, lxc etc.,)
+  cpuarch: "x86_64"
+  type: docker
+  resources:
+    profile: c1.small
+
+    network:
+      -   
+        interface-name: eth0
+
+# Specify runtime and startup
+  startup:
+    rootfs: rootfs.tar
+    target: ["/opt/apps/sparkbot-notify.sh"]

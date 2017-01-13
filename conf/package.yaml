@@ -21,4 +21,4 @@ app:
 # Specify runtime and startup
   startup:
     rootfs: rootfs.tar
-    target: ["/opt/apps/sparkbot-notify.sh"]
+    target: ["/opt/apps/sparkbot-notify.sh start"]

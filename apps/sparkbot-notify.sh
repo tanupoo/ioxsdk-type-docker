@@ -14,7 +14,7 @@ set -e
 export CAF_APP_PATH="/opt/apps"
 export CAF_APP_CONFIG_FILE="package_config.ini"
 
-SPARKBOT_DIR=/usr/bin
+SPARKBOT_DIR=/opt/apps
 #SPARKBOT_DEBUG=-dd
 
 case "$1" in
